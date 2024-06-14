@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <div class="question">What is your name?</div>
+            <div class="answer">My name is Melaku Demeke.</div>
+        </div>
+        <div class="faq">
+            <div class="question">What do you do?</div>
+            <div class="answer">I am a software developer at MYD IT Solutions.</div>
+        </div>
+        <div class="faq">
+            <div class="question">Where did you study?</div>
+            <div class="answer">I studied at Dilla University in Electrical and Computer Engineering.</div>
+        </div>
+        <div class="faq">
+            <div class="question">How can I contact you?</div>
+            <div class="answer">You can contact me via email at melaku.demeke789@gmail.com.</div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const faqs = document.querySelectorAll(".faq");
+    
+            faqs.forEach(faq => {
+                faq.addEventListener("click", () => {
+                    faq.classList.toggle("active");
+                });
+            });
+        });
+    </script>    
+</body>
+</html>
