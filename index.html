@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="faq-container">
         <h1>Frequently Asked Questions</h1>
         <div class="faq">
-            <div class="question">What is your name?</div>
-            <div class="answer">My name is Melaku Demeke.</div>
+            <div class="question">How to student promotion to next class in Zero ERP?</div>
+            <div class="answer">Student promotion to next class in Zero ERP. you have to select promotion in admission
+                option then change school session and create class ,section.
+                Fee details of every student can be stored in database through this module.</div>
         </div>
         <div class="faq">
-            <div class="question">What do you do?</div>
-            <div class="answer">I am a software developer at MYD IT Solutions.</div>
+            <div class="question">How to use zeroerp school android app dashboard .</div>
+            <div class="answer">New user can register in My school Android app they need to click on register button
+                then enter a valid email ID. Check OTP for your email ID and then you need to enter OTP in verification
+                page and then fill school information on the registration page.</div>
         </div>
         <div class="faq">
-            <div class="question">Where did you study?</div>
-            <div class="answer">I studied at Dilla University in Electrical and Computer Engineering.</div>
+            <div class="question">How to add class and section in ZeroERP Android App?</div>
+            <div class="answer">Add new class and section in school mobile app please select class option and add class
+                name and section name</div>
         </div>
         <div class="faq">
-            <div class="question">How can I contact you?</div>
-            <div class="answer">You can contact me via email at melaku.demeke789@gmail.com.</div>
+            <div class="question">How to create subject in ZeroERP Android App?</div>
+            <div class="answer">Add new subject in school mobile app please select create subject option and add new
+                subject name</div>
         </div>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const faqs = document.querySelectorAll(".faq");
-    
+
             faqs.forEach(faq => {
                 faq.addEventListener("click", () => {
                     faq.classList.toggle("active");
                 });
             });
         });
-    </script>    
+    </script>
 </body>
+
 </html>
